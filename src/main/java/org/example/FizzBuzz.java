@@ -1,6 +1,19 @@
+/**
+ * FizzBuzz
+ * Esta aplicación imprime los números del 1 al 100.
+ * Cuando el número es múltiplo de 3 o contiene el 3 imprime "Fizz".
+ * Cuando el número es múltiplo de 5 o contiene el 5 imprime "Buzz".
+ * Ejemplo:
+ * 53 debe devolver FizzBuzz (contiene 5 y 3)
+ * 35 debe devolver FizzBuzzBuzz (contiene 3 y 5 y es divisible por 5).
+**/
 package org.example;
+
+import org.jetbrains.annotations.NotNull;
+
 public class FizzBuzz {
-    public static String fizzBuzz(int i) {
+    // Método que recibe como entrada un entero y devuelve un String tras evaluarlo
+    public static @NotNull String fizzBuzz(int i) {
         String fizz = Integer.toString(i);
         if (fizz.contains("3") && fizz.contains("5") && i % 3 == 0) {
             System.out.println("FizzFizzBuzz");
